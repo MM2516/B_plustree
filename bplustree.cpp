@@ -2,7 +2,7 @@
 #include <iostream>
 
 using namespace std;
-int d = 1;
+int d,t;
 
 // BP node
 class B_plus {
@@ -240,6 +240,7 @@ B_plus *BPTree::getRoot() {
 
 int main() {
  BPTree B;
+  cin>>d>>t;
   int n,x;
   cin>>n;
   while(n!=3){
