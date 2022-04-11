@@ -239,17 +239,18 @@ B_plus *BPTree::getRoot() {
 }
 
 int main() {
-  BPTree B;
-  B.insert(5);
-  B.insert(15);
-  B.insert(25);
-  B.insert(35);
-  B.insert(45);
-  B.insert(55);
-  B.insert(40);
-  B.insert(30);
-  B.insert(20);
-  B.display(B.getRoot());
-
-  B.search(55);
+ BPTree B;
+  int n,x;
+  cin>>n;
+  while(n!=3){
+  if(n==1) //insert
+   {  cin>>x;  //taking in key(data) value
+      B.insert(x);
+   }
+   else if(n==2){
+      B.display(B.getRoot());
+   }
+   cin>>n;
+  }
+  return 0;
 }
